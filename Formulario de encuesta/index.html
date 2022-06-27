@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Encuesta</title>
 </head>
 <body>
-    
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <form id="survey-form">
+        <label id="name-label">Nombre y Apellido: </label>
+        <input id="name" type="text" placeholder="Ingresa tu nombre completo" required>
+        <br>
+        <label id="email-label">Email: </label>
+        <input id="email" type="email" placeholder="Ingresa tu email" required>
+        <br>
+        <label id="number-label">Edad: </label>
+        <input id="number" type="number" min="18" max="99" placeholder="-">
+        <br>
+        <label id="dropdown-label">Estudios completos: </label>
+        <select id="dropdown">
+            <option disabled selected value>Selecciona una opción</option>
+            <option value="secundario-incompleto">Secundario Incompleto</option>
+            <option value="secundario-completo">Secundario Completo</option>
+            <option value="terciario-incompleto">Terciario Incompleto</option>
+            <option value="terciario-completo">Teciario Completo</option>
+            <option value="universitario-incompleto">Universitario Incompleto</option>
+            <option value="universitario-completo">Universitario Completo</option>
+        </select>
+        <br>
+        <p>Sexo: </p>
+        <label id="radio-label"><input type="radio" name="sexo" value="masculino">Masculino</label>
+        <label id="radio-label"><input type="radio" name="sexo" value="femenino">Femenino</label>
+        <label id="radio-label"><input type="radio" name="sexo" value="no-decirlo">Prefiero no decirlo</label>
+        <br>
+        <p>¿En qué dispositivo o consola jugas videojuegos? (Podes seleccionar más de una)</p>
+        <label id="checkbox-label"><input type="checkbox" name="device" value="smart-tv">Smart TV</label>
+        <label id="checkbox-label"><input type="checkbox" name="device" value="celular">Smartphone</label>
+        <label id="checkbox-label"><input type="checkbox" name="device" value="pc">PC</label>
+        <label id="checkbox-label"><input type="checkbox" name="device" value="playstation">PlayStation</label>
+        <label id="checkbox-label"><input type="checkbox" name="device" value="xbox">Xbox</label>
+        <label id="checkbox-label"><input type="checkbox" name="device" value="portatil">Consolas portátiles (Switch, SteamDeck, etc.)</label>
+        <label id="comments-label">Algún comentario que quiera agregar (opcional): </label>
+        <textarea id="comments"></textarea>
+        <input id="submit" type="submit" value="Enviar">
+
+    </form>
 </body>
 </html>
